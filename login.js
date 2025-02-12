@@ -1,12 +1,18 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.getElementById('loginForm');
+    const forgotPasswordButton = document.getElementById('forgotPassword');
 
-    // Add your own validation or authentication logic here
-    if (username && password) {
-        alert('Login successful!');
-    } else {
-        alert('Please fill in both fields.');
-    }
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        console.log('Email:', email);
+        console.log('Password:', password);
+        // Add your authentication logic here
+        window.location.href = '/Profile'; // Navigate to Profile page after successful login
+    });
+
+    forgotPasswordButton.addEventListener('click', () => {
+        window.location.href = '/ForgotPassword';
+    });
 });
