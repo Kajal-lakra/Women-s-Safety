@@ -3,7 +3,7 @@ a img {
     font-weight: bold;
  }
  .main{
-    background: url(pic1.jpg);
+    background: url(bg.jpg);
     height: 100vh;
     background-size: cover;
  }
