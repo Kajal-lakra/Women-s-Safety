@@ -1,0 +1,12 @@
+a img {
+    border-radius: 50%;
+    font-weight: bold;
+ }
+ .main{
+    background: url(pic1.jpg);
+    height: 100vh;
+    background-size: cover;
+ }
+ .navbar {
+    background-color: rgb(71, 59, 59);
+ }
